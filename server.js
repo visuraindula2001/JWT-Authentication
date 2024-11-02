@@ -1,5 +1,8 @@
 const exprss = require("express");
 const app = exprss();
+const jwt = require("jsonwebtoken");
+
+app.use(exprss.json())
 
 const posts = [
   { username: "Kyle", title: "Post 1" },
@@ -7,7 +10,13 @@ const posts = [
 ];
 
 app.get("/posts", (req, res) => {
-    res.json(posts);
+  res.json(posts);
+});
+
+app.post("/login", (req, res) => {
+  //Authenticate User
+
+  
 });
 
 app.listen(3000);
