@@ -1,22 +1,20 @@
 GET http://localhost:3000/posts
-Authorization: Bearerey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzMwNjM3OTk3fQ.7uPzjhXf7IBO3CG5TDrcF_8MrDafxNGfdbvZigdzuWo
-
+Authorization: Bearerey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzMwNjQyNTUyLCJleHAiOjE3MzA2NDI1Njd9.Fzm5ZBN6irYjtr1TTu2ob-jL7KWhkH2OTu9ZvVS6mEE
 ###
 GET http://localhost:4000/posts
 Authorization: Bearerey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzMwNjM3OTk3fQ.7uPzjhXf7IBO3CG5TDrcF_8MrDafxNGfdbvZigdzuWo
 
 
 ###
-POST http://localhost:3000/users 
+POST http://localhost:3000/token
 Content-Type: application/json
 
 {
-    "name":"kamal",
-    "password":"kamal1"
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzMwNjQyODg1fQ.3xky4WS2K18LyFgw1P81hNLF1ob4OwQThzdH-_Wr_ew"
 }
 
 ###
-POST http://localhost:3000/login
+POST http://localhost:4000/login
 Content-Type: application/json
 
 {
