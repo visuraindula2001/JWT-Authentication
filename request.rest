@@ -1,3 +1,18 @@
 GET http://localhost:3000/posts
+Authorization: Bearerey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTczMDYyMzE3Mn0.hjsbCc3gQF9CYcCX64JZ8ddxShvHfTluqqNHnWyHziE
+
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+    "name":"kamal",
+    "password":"kamal1"
+}
 
 ###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "Kyle"
+}
